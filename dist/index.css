@@ -26,46 +26,6 @@
   font-style: normal;
 }
 
-.bg-celes {
-  background: #C33764;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #1D2671, #C33764);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #1D2671, #C33764);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.bg-white {
-  background: white;
-}
-
-.bg-broken-hearts {
-  background: #d9a7c7;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #fffcdc, #d9a7c7);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #fffcdc, #d9a7c7);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.bg-magic {
-  background: #1D2671;
-}
-
-.bg-black {
-  background: #000428;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #004e92, #000428);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #004e92, #000428);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-tr {
-  background: none !important;
-  color: white !important;
-}
-
 .navbar {
   background-color: white;
   z-index: 5;
@@ -391,10 +351,6 @@ tr {
   border-radius: 7px;
 }
 
-.sch-tit {
-  color: #FBB039 !important;
-}
-
 .schedule .btn-sched:focus {
   outline: 0;
 }
@@ -411,25 +367,21 @@ tr {
   width: 100%;
 }
 
-/* 
 .schedule .tb-active tr:nth-child(even) {
   background-color: #F8F8F8;
-} */
+}
 
 .schedule .tb-active td:nth-child(3) {
-  /* display: none; */
-  color: #ffffff;
+  display: none;
 }
 
 .schedule .tb-active td:nth-child(1) {
   width: 35%;
-  color: #FBB039;
 }
 
 .schedule .tb-active td:nth-child(2) {
   font-family: Avenir-Bold;
   font-weight: bold;
-  color: #ffffff;
 }
 
 .schedule .tb-active tr {
@@ -437,6 +389,7 @@ tr {
 }
 
 .schedule .tb-active td {
+  border-bottom: 1px solid #ddd;
   padding: 20px;
   text-align: left;
 }
@@ -475,7 +428,7 @@ tr {
 }
 
 .FAQ h1 {
-  color: #fbb03a !important;
+  color: white;
   font-size: 2em;
   margin-bottom: 10px;
   font-weight: 500;
@@ -493,11 +446,11 @@ tr {
 
 .FAQ .Q-and-A li h3 {
   font-family: 'Avenir-Bold';
-  color: #ffffff;
+  color: #fbb03a;
   font-size: 1em;
   margin: 20px 0 5px 35px;
   text-align: left;
-  /* text-transform: uppercase; */
+  text-transform: uppercase;
   font-size: 23px !important;
 }
 
@@ -793,12 +746,7 @@ h1 {
 }
 
 .wrapper {
-  background: #000428;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #004e92, #000428);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #004e92, #000428);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url(98ee80e2e8f43d3c6d65d39aaac97e4a.jpeg);
   position: relative;
   background-attachment: fixed;
   margin: 0;
@@ -884,4 +832,34 @@ h1 {
 
 .btn-sponsor {
   border: 2px solid #fbb03a;
+}
+
+#devfolio-apply-now {
+  /* justify-content: center; */
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: #220803;
+  border-radius: 3px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 20px;
+  text-align: center;
+  max-width: 13.3em;
+  text-transform: lowercase;
+}
+
+#devfolio-apply-now:not([disabled]) {
+  cursor: pointer;
+}
+
+#devfolio-apply-now:hover {
+  background-color: #2954BF !important;
 }
